@@ -9,7 +9,7 @@ Luciano Luca Fabbri Soto-Aguilar
 
 ##### This study analyzes the impact of the global financial crisis of 2008 on the determinants of the capital structure of non-financial Latin American companies listed on the stock market to evaluate different financial theories associated with the capital structure. Specifically, a database covering the period 2002-2018 with financial information of companies in Brazil, Chile, Mexico and Peru is used to compare the effect of the determinants of leverage in the pre-crisis, crisis and post-crisis period with linear and machine learning models. The results show that the financial indicators of liquidity, size and tangibility have a significant impact on the total leverage of companies in all periods. Furthermore, it is concluded that the Trade-of theory better explains the capital structure of large unprofitable firms and that the Pecking Order theory better explains the debt structure of smaller, profitable companies, less tangible and more liquid firms.
 
-<br/><br/>
+
 
 ##### **Keywords**: capital structure; financial leverage, 2008 financial crisis; machine learning
 
