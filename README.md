@@ -106,9 +106,11 @@ Considering the expected effects of each variable according to Zeitun et. al. (2
 [12] 	J. Jermias y F. Yigit, «Factors affecting leverage during a financial crisis: Evidence from Turkey,» Borsa Istanbul Review, pp. 171-185, 2018. 
 
 ## **5.   Apendix**
-**Appendix 1:**Impact of the different capital structure determinants on firm leverage according to static and sequential formulations. Pre-crisis, crisis, post-crisis estimated effects for the static formulation are first presented followed by a fixed view of the effects of the corresponding variable for the sequential formulation.
+**Appendix 1**: Impact of the different capital structure determinants on firm leverage according to static and sequential formulations. Pre-crisis, crisis, post-crisis estimated effects for the static formulation are first presented followed by a fixed view of the effects of the corresponding variable for the sequential formulation.
 
 ![Appendix1](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Appendix1.png)
+
+**Appendix 2**: Fixed views of the capital structure determinants are displayed to analyze the variation of their effect on firm leverage in the 2008 global financial crisis which is marked by two red planes.
 
 ![Appendix2](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Appendix2.png)
 
