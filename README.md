@@ -13,6 +13,8 @@ Luciano Luca Fabbri Soto-Aguilar
 
 ##### **Keywords**: capital structure; financial leverage, 2008 financial crisis; machine learning
 
+<br/><br/>
+
 ### **1.   Introduction**
 
 The global financial crisis was caused by the collapse of the housing bubble in the United States due to defaults on subprime mortgages. The effects of the subprime crisis could be seen in early 2008, spreading initially to the North American financial system, and later to the global financial system. The global financial crisis caused a generalized economic downturn and the recession of several of the world’s largest economies such as the United States, Japan, Germany, and the United Kingdom, along with the largest bankruptcy in the history of the United States. The crisis exposed the failure of several highly leveraged firms, which casts doubt on the robustness of some of the major theories of capital structure, especially in periods of crisis. In addition, many of the studies on capital structure of firms present mixed results despite being carried out in periods of economic stability. It should be noted that the analysis of the capital structure could contribute in future crises to the elaboration of preventive financial containment plans at a firm specific level and to the development of public policies.
