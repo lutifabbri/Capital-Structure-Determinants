@@ -13,6 +13,8 @@ Luciano Luca Fabbri Soto-Aguilar
 
 ##### **Keywords**: capital structure; financial leverage, 2008 financial crisis; machine learning
 
+###### © 2020 Luciano Luca Fabbri Soto-Aguilar
+
 <br/><br/>
 
 ### **1.   Introduction**
