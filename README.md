@@ -25,7 +25,8 @@ The machine learning approach is relatively new and is characterized by a high l
 To develop this study, quarterly financial statements of Latin American companies were collected covering the period 2002-2018 through the Thompson Reuters Database representing a total of 57.475 entries and 97 columns. The initial exploration of the database showed that null entries became more predominant for periods before the year 2002 and in certain columns. In reference to country composition of the database, Brazil, Chile, Mexico and Peru accumulate 78% of the samples of the database. Regarding industry information present in the database, 54% of specific industries contain only one firm and 89% of specific industries contain less than 5 firms which makes this feature very sparse and difficult to use for many models. In addition, the manufacturing industry corresponds to the most predominant macro-industry in the database, where more than 300 firms are coded as belonging to this area. 
 
 Considering the factors commonly used in the literature and the availability of information, the financial indicators of Total-debt-to-total-assets leverage ratio, growth, tangibility, profitability, liquidity and size of the companies were used to study the determinants of the capital structure of firms and its variation based on the 2008 global financial crisis. The composition and effect of this indicators on firm leverage according to Zeitun, et. al (2017) is summarized in the following table:
-##### *Table 1. Financial indicators/variables and their effect on capital structure according to Trade-off and Pecking Order*
+<br/><br/>
+##### *Table 1. Financial indicators/variables and their effect on capital structure according to Trade-off and Pecking Order.*
 |Variable|Abbreviation|Composition|Trade-off|Pecking order|
 |:-------|:-----------|:----------|:-------:|:-----------:|
 |Leverage|LEV|	Total debt to total assets|N/A|N/A|
@@ -34,6 +35,7 @@ Considering the factors commonly used in the literature and the availability of 
 |Profitability|	PROF|	Net income to total assets|+|	-|
 |Liquidity|LIQ|Current assets to current liabilities|+/-|-|
 |Firm size|SIZE|Natural logarithm of total assets|+|-|
+<br/><br/>
 
 Two approaches to determine the impact of different variables on leverage and their variation in time were proposed. The first approach was formulated rigorously with the primary goal of avoiding any type of data leakage. In this context, data leakage could come from two sources; the explanatory variables, because the way the way the financial indicators are constructed (see Table 1), and temporal leakage because the panel nature of the data; which is produced when training a model with samples from future temporal data. The second approach consisted in fitting three static models which were trained to three macro time periods: pre-crisis, crisis and post-crisis, as if only cross-sectional data were used. It is important to remark that this last approach, more than explaining firm leverage, can result in explaining internal variable correlation because of data leakage from the explanatory variables. The principal motivation for this proposal is to trade-off validity for interpretability of the results.
 
@@ -58,6 +60,7 @@ An increase in model performance is achieved by including random firm effects wh
 ![Combined figure](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Combined.png)
 
 ##### *Figure 1. Training samples and test score & R2 train/test Joint distribution – Sequential Formulation.*
+<br/><br/>
 
 
 
@@ -68,7 +71,8 @@ In terms of the effects of the different variables on firm leverage: for the seq
 From both model formulations, the following results are obtained; liquidity and firm size indicators are those that explain, on average, the highest proportion of firm leverage.  On the other hand, all variables presented both positive and negative effects on leverage depending on the value of the indicator and none presented an effect that could have been considered linear. The trends presented are sufficiently similar between periods to consider that the global financial crisis did not have a significant effect on the effect of the different financial indicators on the leverage of the companies.
 
 ![gif](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Variable%20effects%20-%20gifs/Formulation4%20-%20Total%20leverage%20-%20Firm%20size%20-%20lag1.gif)
-##### *Gif 1. Surface fitting to SHAP Values and crisis period display.*
+##### *Gif 1. Surface fitting to SHAP Values and crisis period display - Liquidity - lag1.*
+<br/><br/>
 
 Considering the expected effects of each variable according to Zeitun et. al. (2017), the results suggest that one theory is not predominant over another because the effect of the different determinants of the capital structure can be positive or negative depending on the values they take. However, it is possible to suggest that one theory better explains the capital structure for certain types of firms better than the other. In this way,  and in general terms, for larger and unprofitable companies, the Trade-off theory explains in a better way the debt structure of firms and the Pecking Order theory better explains the capital structure of smaller, more profitable, less tangible and more liquid firms.
 
