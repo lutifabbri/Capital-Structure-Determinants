@@ -74,6 +74,11 @@ An increase in model performance is achieved by including random firm effects wh
 ![Figure 1](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/R2%20test-train-kde.png)
 
 
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+!![Figure 1](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/R2%20test-train-kde.png)  |  ![Figure 1](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/R2%20test-train-kde.png)
+
+
 <img src="https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/R2%20test-train-kde.png" alt="alt text" width=250 height=250>
 
 
