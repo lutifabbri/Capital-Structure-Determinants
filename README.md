@@ -39,16 +39,10 @@ Two approaches to determine the impact of different variables on leverage and th
 The first approach consisted in training different sequential Mixed effect XGBoost regression models with lagged information of the up to one year of the financial explanatory variables for each quarter. Because of computing time, the hyperparameters of each model were optimized without considering the mixed effect computation. Specifically the hyperparameters of each XGBoost were determined by a grid search in which an XGBoost was trained in a two year period and cross-validated with half of the samples in the next quarter to determine the best set of hyperparameters according to the predefined grid. Then a Mixed Effects XGBoost was trained with the optimized hyperparameters on the training data and finally tested with the other half of the unseen data of the following period. The second approach, referred to as a static approach, estimated a total of three Mixed Effects XGBoost models and used the same logic for optimizing the XGBoost hyperparameters, but in this case the cross-validation and testing sets corresponded to the last four quarters of each macro-period. For both approaches, each model considered the impact of the different explanatory variables as fixed and the firm-specific effect as random.
 
 Sequential approach:
-
-
-
-
-
-
-
-
+![Formulation1](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Formulation1%20formula.png)
 
 Static approach:
+![Formulation2](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Formulation2%20formula.png)
 
 
 
