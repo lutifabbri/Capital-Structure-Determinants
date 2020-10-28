@@ -26,21 +26,19 @@ The machine learning approach is relatively new and is characterized by a high l
 
 ## **Methodology**
 
-To develop this study, quarterly financial statements of Latin American companies were collected covering the period 2002-2018 through the Thompson Reuters Database representing a total of 57.475 entries and 97 columns. 
-
-The initial exploration of the database showed that null entries became more predominant for periods before the year 2002 and in certain columns. In reference to country composition of the database, Brazil, Chile, Mexico and Peru accumulate 78% of the samples of the database. Regarding industry information present in the database, 54% of specific industries contain only one firm and 89% of specific industries contain less than 5 firms which makes this feature very sparse and difficult to use for many models. In addition, the manufacturing industry corresponds to the most predominant macro-industry in the database, where more than 300 firms are coded as belonging to this area. 
+To develop this study, quarterly financial statements of Latin American companies were collected covering the period 2002-2018 through the Thompson Reuters Database representing a total of 57.475 entries and 97 columns. The initial exploration of the database showed that null entries became more predominant for periods before the year 2002 and in certain columns. In reference to country composition of the database, Brazil, Chile, Mexico and Peru accumulate 78% of the samples of the database. Regarding industry information present in the database, 54% of specific industries contain only one firm and 89% of specific industries contain less than 5 firms which makes this feature very sparse and difficult to use for many models. In addition, the manufacturing industry corresponds to the most predominant macro-industry in the database, where more than 300 firms are coded as belonging to this area. 
 
 Considering the factors commonly used in the literature and the availability of information, the financial indicators of Total-debt-to-total-assets leverage ratio, growth, tangibility, profitability, liquidity and size of the companies were used to study the determinants of the capital structure of firms and its variation based on the 2008 global financial crisis. The composition and effect of this indicators on firm leverage according to Zeitun, et. al (2017) is summarized in the following table:
 
 | Variable | Abbreviation | Composition | *Trade-off* | *Pecking order* |
-| ---| ---|--- |--- |--- |
-|Leverage|LEV|Total debt to total assets|N/A|	N/A|
+|----------|-------------|------------- |:-----------:|:---------------:|
+|Leverage  |LEV|Total debt to total assets|N/A|	N/A|
 Growth	|GROW	|Quarterly percentage variation of total assets|	-|	+|
 Tangibility	|TANG|	Fixed net Assets to total assets|	+/-|	-|
 Profitability|	PROF|	Net income to total assets|	+	|-|
 Liquidity|	LIQ	|Current assets to current liabilities|	+/-|	-|
 Firm size|	SIZE|	Natural logarithm of total assets|	+|	-|
-| | | | | |
+
 
 
 Two approaches to determine the impact of different variables on leverage and their variation in time were proposed. The first approach was formulated rigorously with the primary goal of avoiding any type of data leakage. In this context, data leakage could come from two sources; the explanatory variables, because the way the way the financial indicators are constructed (see Table 1), and temporal leakage because the panel nature of the data; which is produced when training a model with samples from future temporal data. The second approach consisted in fitting three static models which were trained to three macro time periods: pre-crisis, crisis and post-crisis, as if only cross-sectional data were used. It is important to remark that this last approach, more than explaining firm leverage, can result in explaining internal variable correlation because of data leakage from the explanatory variables. The principal motivation for this proposal is to trade-off validity for interpretability of the results.
@@ -67,7 +65,7 @@ Where f(X) is the unknown function estimated using an XGBoost, Br_it,Ch_it,Mx_it
 The sequential formulation enabled to examine a more continuous variation of the effects of the different variables on leverage, however, a drawback in terms of interpretability is introduced because of the repetition of each variable caused by the lagged effect. The effects on firm leverage of each financial explanatory variable were plotted in a 3d graph with dimensions of variable value, year of the corresponding model and impact on firm leverage. On the other hand, formulation two only enables to plot 2d plots for each macro time period. Lastly the effects of each variable and formulation were compared according to the estimated effect on leverage according to the different capital structure theories and between the two formulations.
 
 
-Results
+## **Results**
 
 An increase in model performance is achieved by including random firm effects which indicates the existence of non-negligible random effects. In other words, individual/internal firm factors have strong effects on leverage, which could be due to internal company policies or stakeholder management preferences. In terms of training and testing accuracy the sequential formulation shows satisfactory performance (see Figure 2), achieving an R2 testing score over 0.77 for 75% of the models and a minimum R2 training score of 0.96. Similarly, the static formulation also achieved satisfactory performance, with an average training and testing R2 score of 0.94 and 0.77, respectively. Respect to the performance of the models, it is possible to observe a positive trend between number of training data on the performance of the model in unobserved data (see Figure 2). It is possible to assume that obtaining new or more observations could result in an increase in performance. However, considering that the only way that the author of this project has to increase the volume of data is by imputing missing data under some criteria, and given the complex nature of the data used (panel data - time series for each variable per company) it is estimated that the use of any imputation technique could result in the addition of unnecessary noise instead of rich and meaningful information to explain firm leverage.
 
