@@ -72,7 +72,7 @@ An increase in model performance is achieved by including random firm effects wh
 
 
 
- *Figure 1.  Joint distribution: R2 train/test – Sequential Formulation         Figure 2. Training samples and test score – Sequential Formulation.*
+ ##### |*Figure 1.  Joint distribution: R2 train/test – Sequential Formulation|  Figure 2. Training samples and test score – Sequential Formulation.*|
 
 
 
