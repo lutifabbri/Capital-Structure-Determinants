@@ -65,11 +65,12 @@ An increase in model performance is achieved by including random firm effects wh
 
 
 
-|*Figure 1.  Joint distribution: R2 train/test – Sequential Formulation*|*Figure 2. Training samples and test score – Sequential Formulation.*|
-|---|---:|
+
 
 ![Combined figure](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Combined.png)
 
+|*Figure 1.  Joint distribution: R2 train/test – Sequential Formulation*|*Figure 2. Training samples and test score – Sequential Formulation.*|
+|---|---:|
 
 
 In aggregate terms the static and sequential formulations achieved practically equal performance. However, because changes in the effects of different variables on total firm leverage might occur in short time spans (few samples with altered behavior), this could possibly have non-significant influence in the performance metric (R2 score). This phenomenon of short time span changes in effect of variables could not possibly be detected by the static model formulation and would not be reflected in the aggregate performance of the model. Because of this, is encouraged to use both model formulations with these considerations in mind to get accurate inferences about the impact and change of different firm characteristics on total leverage. 
