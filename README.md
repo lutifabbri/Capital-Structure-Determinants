@@ -15,6 +15,8 @@ Luciano Luca Fabbri Soto-Aguilar
 
 ###### © 2020 Luciano Luca Fabbri Soto-Aguilar
 
+#### [Explore the code>>](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Capital%20Structure%20Determinants.ipynb)
+
 <br/><br/>
 
 ### **1.   Introduction**
