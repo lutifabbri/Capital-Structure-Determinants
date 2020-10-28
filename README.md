@@ -62,6 +62,8 @@ The sequential formulation enabled to examine a more continuous variation of the
 
 An increase in model performance is achieved by including random firm effects which indicates the existence of non-negligible random effects. In other words, individual/internal firm factors have strong effects on leverage, which could be due to internal company policies or stakeholder management preferences. In terms of training and testing accuracy the sequential formulation shows satisfactory performance (see Figure 2), achieving an R2 testing score over 0.77 for 75% of the models and a minimum R2 training score of 0.96. Similarly, the static formulation also achieved satisfactory performance, with an average training and testing R2 score of 0.94 and 0.77, respectively. Respect to the performance of the models, it is possible to observe a positive trend between number of training data on the performance of the model in unobserved data (see Figure 2). It is possible to assume that obtaining new or more observations could result in an increase in performance. However, considering that the only way that the author of this project has to increase the volume of data is by imputing missing data under some criteria, and given the complex nature of the data used (panel data - time series for each variable per company) it is estimated that the use of any imputation technique could result in the addition of unnecessary noise instead of rich and meaningful information to explain firm leverage.
 
+![gif](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Variable%20effects%20-%20gifs/Formulation4%20-%20Total%20leverage%20-%20Firm%20size%20-%20lag1.gif)
+
 
 
 
