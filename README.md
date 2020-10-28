@@ -7,7 +7,7 @@ Luciano Luca Fabbri Soto-Aguilar
 
 
 
-##### This study analyzes the impact of the global financial crisis of 2008 on the determinants of the capital structure of non-financial Latin American companies listed on the stock market to evaluate different financial theories associated with the capital structure. Specifically, a database covering the period 2002-2018 with financial information of companies in Brazil, Chile, Mexico and Peru is used to compare the effect of the determinants of leverage in the pre-crisis, crisis and post-crisis period with linear and machine learning models. The results show that the financial indicators of liquidity, size and tangibility have a significant impact on the total leverage of companies in all periods. Furthermore, it is concluded that the Trade-of theory better explains the capital structure of large unprofitable firms and that the Pecking Order theory better explains the debt structure of smaller, profitable companies, less tangible and more liquid firms.
+##### This study analyzes the impact of the global financial crisis of 2008 on the determinants of the capital structure of non-financial Latin American companies listed on the stock market to evaluate different financial theories associated with corporate capital structure. Specifically, a database covering the period 2002-2018 with financial information of companies in Brazil, Chile, Mexico and Peru is used to compare the effect of the determinants of leverage in the pre-crisis, crisis and post-crisis period with linear and machine learning models. The results show that the financial indicators of liquidity, size and tangibility have a significant impact on the total leverage of companies in all periods. Furthermore, it is concluded that the Trade-of theory better explains the capital structure of large unprofitable firms and that the Pecking Order theory better explains the debt structure of smaller, profitable companies, less tangible and more liquid firms.
 
 
 
@@ -35,7 +35,7 @@ To develop this study, quarterly financial statements of Latin American companie
 
 Considering the factors commonly used in the literature and the availability of information, the financial indicators of Total-debt-to-total-assets leverage ratio, growth, tangibility, profitability, liquidity and size of the companies were used to study the determinants of the capital structure of firms and its variation based on the 2008 global financial crisis. The composition and effect of this indicators on firm leverage according to Zeitun, et. al (2017) is summarized in the following table:
 <br/><br/>
-##### *Table 1. Financial indicators/variables and their effect on capital structure according to Trade-off and Pecking Order.*
+##### *Table 1. Financial indicators/variables and their effect on capital structure according to Trade-off and Pecking Order theories.*
 |Variable|Abbreviation|Composition|Trade-off|Pecking order|
 |:-------|:-----------|:----------|:-------:|:-----------:|
 |Leverage|LEV|	Total debt to total assets|N/A|N/A|
