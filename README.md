@@ -80,7 +80,7 @@ In aggregate terms the static and sequential formulations achieved practically e
 
 In terms of the effects of the different variables on firm leverage: for the sequential formulation, independent of the lag of the variable, the effect on leverage is the same, and both formulations show the same trend effects of each variable on firm leverage. It is encouraged to the reader to check the SHAP plots in this repository and to use the plotting tool in the notebook to explore interactively the effects of the different variables and how they vary across time (see gif 1).
 
-![gif](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Variable%20effects%20-%20gifs/Formulation4%20-%20Total%20leverage%20-%20Firm%20size%20-%20lag1.gif)
+![gif](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Variable%20effects%20-%20gifs/Formulation4%20-%20Total%20leverage%20-%20Liquidity%20-%20lag1.gif)
 ##### *Gif 1. Surface fitting to SHAP Values and crisis period display - Liquidity - lag1.*
 <br/><br/>
 
