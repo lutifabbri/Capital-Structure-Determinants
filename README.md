@@ -35,6 +35,7 @@ Considering the factors commonly used in the literature and the availability of 
 |Profitability|	PROF|	Net income to total assets|+|	-|
 |Liquidity|LIQ|Current assets to current liabilities|+/-|-|
 |Firm size|SIZE|Natural logarithm of total assets|+|-|
+
 <br/><br/>
 
 Two approaches to determine the impact of different variables on leverage and their variation in time were proposed. The first approach was formulated rigorously with the primary goal of avoiding any type of data leakage. In this context, data leakage could come from two sources; the explanatory variables, because the way the way the financial indicators are constructed (see Table 1), and temporal leakage because the panel nature of the data; which is produced when training a model with samples from future temporal data. The second approach consisted in fitting three static models which were trained to three macro time periods: pre-crisis, crisis and post-crisis, as if only cross-sectional data were used. It is important to remark that this last approach, more than explaining firm leverage, can result in explaining internal variable correlation because of data leakage from the explanatory variables. The principal motivation for this proposal is to trade-off validity for interpretability of the results.
