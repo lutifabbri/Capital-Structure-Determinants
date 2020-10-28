@@ -71,7 +71,7 @@ An increase in model performance is achieved by including random firm effects wh
 
 ![Combined figure](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Combined.png)
 
-##### *Figure 1. Training samples and test score & R2 train/test Joint distribution – Sequential Formulation.*
+##### *Figure 1. Training samples and test score & R2 train/test KDE Joint distribution – Sequential Formulation.*
 <br/><br/>
 
 
