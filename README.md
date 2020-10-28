@@ -30,14 +30,7 @@ To develop this study, quarterly financial statements of Latin American companie
 
 Considering the factors commonly used in the literature and the availability of information, the financial indicators of Total-debt-to-total-assets leverage ratio, growth, tangibility, profitability, liquidity and size of the companies were used to study the determinants of the capital structure of firms and its variation based on the 2008 global financial crisis. The composition and effect of this indicators on firm leverage according to Zeitun, et. al (2017) is summarized in the following table:
 
-| Variable | Abbreviation | Composition | *Trade-off* | *Pecking order* |
-|----------|-------------|------------- |:-----------:|:---------------:|
-|Leverage  |LEV|Total debt to total assets|N/A|	N/A|
-Growth	|GROW	|Quarterly percentage variation of total assets|	-|	+|
-Tangibility	|TANG|	Fixed net Assets to total assets|	+/-|	-|
-Profitability|	PROF|	Net income to total assets|	+	|-|
-Liquidity|	LIQ	|Current assets to current liabilities|	+/-|	-|
-Firm size|	SIZE|	Natural logarithm of total assets|	+|	-|
+
 
 
 
@@ -72,19 +65,10 @@ An increase in model performance is achieved by including random firm effects wh
 
 
 
- ##### |*Figure 1.  Joint distribution: R2 train/test – Sequential Formulation|  Figure 2. Training samples and test score – Sequential Formulation.*|
+|*Figure 1.  Joint distribution: R2 train/test – Sequential Formulation*|*Figure 2. Training samples and test score – Sequential Formulation.*|
+|---|---:|
 
-
-
-
-![FIG3](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Combined.png)
-
-
-
-
-
-
-
+![Combined figure](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Combined.png)
 
 
 
