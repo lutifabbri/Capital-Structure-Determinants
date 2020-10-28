@@ -78,6 +78,10 @@ An increase in model performance is achieved by including random firm effects wh
 
 
 
+![FIG3](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Combined.jpeg)
+
+
+
 
 
 
