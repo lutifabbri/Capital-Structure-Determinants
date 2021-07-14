@@ -15,7 +15,7 @@ Luciano Luca Fabbri Soto-Aguilar
 
 ###### © 2020 Luciano Luca Fabbri Soto-Aguilar
 
-#### [Explore the code>>](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Capital%20Structure%20Determinants.ipynb)
+#### [Explore the code>>](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Files/Capital%20Structure%20Determinants.ipynb)
 
 <br/><br/>
 
@@ -55,11 +55,11 @@ The first approach consisted in training different sequential [Mixed effect XGBo
 
 Sequential approach:
 <br/><br/>
-![Formulation1](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Formulation1%20formula.png)
+![Formulation1](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Files/Dataset%20Images/Formulation1%20formula.png)
 
 Static approach:
 <br/><br/>
-![Formulation2](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Formulation2%20formula.png)
+![Formulation2](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Files/Dataset%20Images/Formulation2%20formula.png)
 
 
 Where f(X) is the unknown function estimated using an XGBoost, Br<sub>it</sub>, Ch<sub>it</sub>, Mx<sub>it</sub>, Pe<sub>it</sub> are dichotomic variables that indicate the country of headquarters of each firm, θ is the corresponding hyperparameter vector that parameterizes XGBoost models, Z<sub>i</sub> is the covariate matrix of random effects, b<sub>i</sub> is the vector of random effects for company i ,  and ϵ<sub>it</sub> is the random error term. [SHAP Values](https://github.com/slundberg/shap#citations) were used to interpret the results of each model. The computing of this values does not consider firm-specific effects on leverage, leaving only the fixed effects of the corresponding explanatory variables which facilitates the exploration of  ‘pure’ effects of capital structure determinants within the framework of the objectives of this work.
@@ -71,7 +71,7 @@ The sequential formulation enabled to examine a more continuous variation of the
 
 An increase in model performance is achieved by including random firm effects which indicates the existence of non-negligible random effects. In other words, individual/internal firm factors have strong effects on leverage, which could be due to internal company policies or stakeholder management preferences. In terms of training and testing accuracy the sequential formulation shows satisfactory performance (see Figure 1), achieving an R2 testing score over 0.77 for 75% of the models and a minimum R2 training score of 0.96. Similarly, the static formulation also achieved satisfactory performance, with an average training and testing R2 score of 0.94 and 0.77, respectively. Respect to the performance of the models, it is possible to observe a positive trend between number of training data on the performance of the model in unobserved data (see Figure 1). It is possible to assume that obtaining new or more observations could result in an increase in performance. However, considering that the only way that the author of this project has to increase the volume of data is by imputing missing data under some criteria, and given the complex nature of the data used (panel data - time series for each variable per company) it is estimated that the use of any imputation technique could result in the addition of unnecessary noise instead of rich and meaningful information to explain firm leverage.
 
-![Combined figure](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Combined.png)
+![Combined figure](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Files/Dataset%20Images/Combined.png)
 
 ##### *Figure 1. Training samples and test score & R2 train/test KDE Joint distribution – Sequential Formulation.*
 <br/><br/>
@@ -82,7 +82,7 @@ In aggregate terms the static and sequential formulations achieved practically e
 
 In terms of the effects of the different variables on firm leverage: for the sequential formulation, independent of the lag of the variable, the effect on leverage is the same, and both formulations show the same trend effects of each variable on firm leverage. It is encouraged to the reader to check the SHAP plots in this repository and to use the plotting tool in the notebook to explore interactively the effects of the different variables and how they vary across time (see gif 1).
 
-![gif](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Variable%20effects%20-%20gifs/Formulation4%20-%20Total%20leverage%20-%20Liquidity%20-%20lag1.gif)
+![gif](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Files/Variable%20effects%20-%20gifs/Formulation4%20-%20Total%20leverage%20-%20Liquidity%20-%20lag1.gif)
 ##### *Gif 1. Surface fitting to SHAP Values and crisis period display - Liquidity - lag1.*
 <br/><br/>
 
@@ -119,12 +119,11 @@ Considering the expected effects of each variable according to Zeitun et. al. (2
 ## **5.   Apendix**
 **Appendix 1**: Impact of the different capital structure determinants on firm leverage according to static and sequential formulations. Pre-crisis, crisis, post-crisis estimated effects for the static formulation are first presented followed by a fixed view of the effects of the corresponding variable for the sequential formulation.
 
-![Appendix1](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Appendix1.png)
+![Appendix1](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Files/Dataset%20Images/Appendix1.png)
 
 **Appendix 2**: Fixed views of the capital structure determinants are displayed to analyze the variation of their effect on firm leverage in the 2008 global financial crisis which is marked by two red planes.
 
-![Appendix2](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Dataset%20Images/Appendix2.png)
-
+![Appendix2](https://github.com/lutifabbri/Capital-Structure-Determinants/blob/main/Files/Dataset%20Images/Appendix2.png)
 
 
 
